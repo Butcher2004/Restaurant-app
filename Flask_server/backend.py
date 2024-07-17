@@ -15,6 +15,12 @@ def restaurants():
     with open(r'E:\Projects\Zomato\dinewell\Flask_server\restaurants_info.json', 'r') as json_file:
         json_data = json.load(json_file)
     return json_data
+
+@app.route('/thumbnails')
+def thumbnails():
+    with open(r"E:\Projects\Zomato\dinewell\src\utils\thumbnails.json", 'r') as json_file:
+        json_data = json.load(json_file)
+    return json_data
     
 
 

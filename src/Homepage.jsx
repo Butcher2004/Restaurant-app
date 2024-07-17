@@ -15,6 +15,7 @@ function Homepage() {
     const [pgsize, setPgsize] = useState(8);
     const [pgchange, setPgchange] = useState(1)
     const [search, setSearch] = useState("")
+    const [thumb, setThumb] = useState([])
     
     let searched = list_rest
     if(search!=="")
@@ -32,7 +33,21 @@ function Homepage() {
           .catch(error => {
             console.error('Error fetching data:', error);
           });
+
+          fetch('/thumbnails')
+          .then(response => response.json())
+          .then(data => {
+            setThumb(data)
+            // console.log(data)
+            console.log("Thumbnails list is stored")
+            // console.log(data); 
+          })
+          .catch(error => {
+            console.error('Error fetching data:', error);
+          });
+
       }, []);
+    
 
     const onPageChange = (pgnumber, tochange) =>
     {
@@ -41,8 +56,18 @@ function Homepage() {
         {
             setPgchange(pgnumber)
         }
-        
+    }
 
+    const findRest = (regId) =>
+    {
+        console.log("Find rest executed")
+        if(thumb.length!==0)
+        {
+            const result = thumb.find(obj => obj["Restaurant ID"] === regId);
+            console.log(result)
+            return result['thumb']
+        }
+        return ""
     }
 
     const handleSearch = (e) => {
@@ -91,7 +116,7 @@ function Homepage() {
             <div className="all_restaurants">
                 {new_List.map(elem => (
                     <div className="restlist" key={elem["Restaurant ID"]}>
-                    <div className="immg"></div>
+                    <img src={findRest(elem["Restaurant ID"])} className="immg"></img>
                     <div className="all">
                         <h2>{elem["Restaurant Name"]}</h2>
                         <div className="starsreviews">

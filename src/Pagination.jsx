@@ -5,7 +5,7 @@ function Pagination({ pgnum, onPageChange, currpg, pgsize, Size })
 {
   const lengthofbar = 4
   const num = Math.ceil(Size/pgsize)
-  // console.log("NUm : ",num)
+  console.log("Number of pages : ",num)
 
   if(num==0) return (
     <h1 style={{'fontSize':'20px'}} >No Restaurants Found</h1>
