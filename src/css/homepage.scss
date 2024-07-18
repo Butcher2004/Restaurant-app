@@ -27,6 +27,10 @@ header
         margin: 0;
         margin-left: 4%;
     }
+    .icon
+    {
+        margin-left: 80%;
+    }
 }
 
 .x
@@ -82,12 +86,15 @@ header
     flex-direction: row;
     cursor: pointer;
     width: 550px;
+    border-radius: 5px;
+    
     
     .immg
     {
         background-color: red;
         height: 80px;
-        width: 80px;
+        width: 100px;
+        border-radius: 5px;
         margin-block: auto;
     }
     .all
@@ -103,9 +110,18 @@ header
         }
         .starsreviews
         {
-            color : $light_color;
+            color : $text_light_color;
             font-weight: 500;
         }
+    }
+}
+
+.restlist:hover
+{
+    background-color: $light_color;
+    .starsreviews
+    {
+        color : $bg_color;
     }
 }
 

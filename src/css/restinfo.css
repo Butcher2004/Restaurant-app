@@ -1,0 +1,67 @@
+.everything {
+  background-color: #131c24;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 1%;
+}
+.everything img {
+  height: 400px;
+  width: 1200px;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+.everything .restname {
+  font-family: Poppins;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+  font-size: 40px;
+  font-weight: 800;
+}
+.everything .restname p {
+  color: gray;
+  font-size: 20px;
+}
+.everything .restname p i {
+  color: green;
+}
+
+.info_out {
+  margin-top: 1%;
+  text-align: left;
+  width: 78%;
+}
+.info_out h1 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 23px;
+}
+.info_out p {
+  font-family: Raleway;
+  font-size: 15px;
+}
+
+.headds {
+  width: 78%;
+  margin-top: 5%;
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.headds button {
+  width: 385px;
+  border-radius: 5px;
+}
+.headds button.active {
+  background-color: rgb(47, 94, 133);
+  color: white;
+}
+
+.reder {
+  margin-top: 3%;
+  width: 78%;
+  min-height: 400px;
+}/*# sourceMappingURL=restinfo.css.map */

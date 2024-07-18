@@ -1,0 +1,22 @@
+.business {
+  width: 78%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.eleme {
+  border-bottom: solid white 1px;
+  margin-block: 5px;
+}
+.eleme h1 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(131, 112, 6);
+}
+.eleme p {
+  font-family: Raleway;
+  font-size: 15px;
+  color: white;
+}/*# sourceMappingURL=business.css.map */
