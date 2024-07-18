@@ -1,33 +1,29 @@
 import React from 'react'
 import '../css/business.css'
 
-function Events() {
+function Events({title, desc, sd, st, ed, et, desclaim}) {
   return (
     <div className="business">
         
         <div className="eleme">
             <h1>Event Title</h1>
-            <p>Give list of cuisines here</p>
+            <p>{title}</p>
         </div>
         <div className="eleme">
             <h1>Description</h1>
-            <p>Give list of cuisines here</p>
+            <p>{desc}</p>
         </div>
         <div className="eleme">
             <h1>Start Date and Time</h1>
-            <p>Give list of cuisines here</p>
+            <p>G{sd} and {st}</p>
         </div>
         <div className="eleme">
             <h1>End Date and Time</h1>
-            <p>Give list of cuisines here</p>
-        </div>
-        <div className="eleme">
-            <h1>Description</h1>
-            <p>Give list of cuisines here</p>
+            <p>{ed} and {et}</p>
         </div>
         <div className="eleme">
             <h1>Desclaimer</h1>
-            <p>Give list of cuisines here</p>
+            <p>{desclaim}</p>
         </div>
     </div>
   )

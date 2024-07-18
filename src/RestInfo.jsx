@@ -31,6 +31,8 @@ function RestInfo() {
       }, [id]);
 
     // console.log("Retrieved Data : ",data)
+    
+    const flag = false
 
     
 
@@ -78,8 +80,8 @@ function RestInfo() {
 
         </div>
         <div className="reder">
-        {render1=='business' ? <Business/> : ""}
-        {render1=='events' ? <Events/> : ""}
+        {render1=='business' ? <Business locality = {data['location']['locality'] } Pr = {data['price_range']}  OnlineD = {data["has_online_delivery"]==1?"Yes":"No"} TableB = {data["has_table_booking"]==1?"Yes":"No"} Blink = {data['book_url']} Plink = {data['photos_url']}  cur = {data['currency']} ctwo = {data["average_cost_for_two"]}/> : ""}
+        {render1=='events' ? flag? <Events title = {data["zomato_events"]['title']} desc = {data["zomato_events"]['event']['description'] } sd = {data["zomato_events"]['event']['start_date']} st = {data["zomato_events"]['event']['start_time']} ed = {data["zomato_events"]['event']['end_date'] } et = {data["zomato_events"]['event']['end_time']} desclaim = {data["zomato_events"]['event']['disclaimer']} />:<Events /> : ""}
         </div></>}
     </div>
   )

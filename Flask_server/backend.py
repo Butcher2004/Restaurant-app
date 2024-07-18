@@ -3,6 +3,7 @@ import pandas as pd
 import json
 app = Flask(__name__)
 
+import random
 
 
 @app.route("/restaurants")
@@ -53,7 +54,28 @@ def information(regid):
     return jsonify(elem)
     
 
+@app.route('/random')
+def randdom():
+
     
+
+
+    x = open(r'E:\Projects\Zomato\dinewell\Flask_server\file1.json', 'r')
+    data = json.load(x)
+    while(True):
+        rand1 = random.randint(0,len(data))
+        
+        if 'restaurants' in data[rand1] and len(data[rand1]['restaurants'])>=1:
+            try:
+                rand2 = random.randint(0,len(data[rand1]['restaurants']))
+                res = data[rand1]['restaurants'][rand2]['restaurant']
+                return jsonify(res)
+            except:
+                continue
+    
+
+    
+
 
 
 if __name__=="__main__":
