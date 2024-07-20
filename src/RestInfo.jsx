@@ -38,7 +38,7 @@ function RestInfo() {
 
   return (
     <div className="everything">
-        {data.length==0 ? <><img  src="https://b.zmtcdn.com/data/pictures/2/308322/cf86dbd8b8ca4d40682c7713f112cc07_featured_v2.jpg" alt="" />
+        {data.length==0 ? <><img  src="" alt="" />
         <div className="restname">
             <h1>RestName</h1>
             <p>4.8 <i class="fas fa-star"></i> &nbsp;&nbsp;&nbsp;Country</p>

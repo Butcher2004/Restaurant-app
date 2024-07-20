@@ -24,11 +24,11 @@ function Business({locality, Pr, OnlineD, TableB, Blink, Plink, cur, ctwo}) {
         </div>
         <div className="eleme">
             <h1>Booking Website</h1>
-            <p><a href= {Blink} style={{"color":'blue'}} href="">Booking Link</a></p>
+            <p><a href= {Blink} style={{"color":'blue'}}>Booking Link</a></p>
         </div>
         <div className="eleme">
             <h1>Photos</h1>
-            <p><a href = {Plink} style={{"color":'blue'}} href="">Photos Link</a></p>
+            <p><a href = {Plink} style={{"color":'blue'}}>Photos Link</a></p>
         </div>
         <div className="eleme">
             <h1>Currency</h1>
