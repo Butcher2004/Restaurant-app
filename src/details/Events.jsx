@@ -7,23 +7,23 @@ function Events({title, desc, sd, st, ed, et, desclaim}) {
         
         <div className="eleme">
             <h1>Event Title</h1>
-            <p>{title}</p>
+            <p>{title?title:"Null"}</p>
         </div>
         <div className="eleme">
             <h1>Description</h1>
-            <p>{desc}</p>
+            <p>{desc?desclaim:"Null"}</p>
         </div>
         <div className="eleme">
             <h1>Start Date and Time</h1>
-            <p>G{sd} and {st}</p>
+            {sd? <p>{sd} and {st}</p>:<p>Null</p>}
         </div>
         <div className="eleme">
             <h1>End Date and Time</h1>
-            <p>{ed} and {et}</p>
+            {ed? <p>{ed} and {et}</p>:<p>Null</p>}
         </div>
         <div className="eleme">
             <h1>Desclaimer</h1>
-            <p>{desclaim}</p>
+            <p>{desclaim?desclaim:"Null"}</p>
         </div>
     </div>
   )

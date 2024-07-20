@@ -41,8 +41,9 @@ def information(regid):
             for l in range(len(check)):
                 check1 = check[l]['restaurant']
                 if(str(check1['R']['res_id'])==str(regid)):
+                    print(check1.keys())
                     for detail in check1.keys():
-                        print(check1[detail])
+                        # print(check1[detail])
                         elem[detail] = check1[detail]
                     # print(elem)
                     flag = True
