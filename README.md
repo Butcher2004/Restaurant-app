@@ -1,25 +1,18 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ErQVLbmr)
-# Project Assignment: Zomato Restaurant Listing & Searching
- 
-## Key Use Cases
- 
-### Data Loading
-Create an independent script to load the Zomato restaurant data available [here](https://www.kaggle.com/datasets/shrutimehta/zomato-restaurants-data) into a database.
- 
-### Web API Service
-Develop a web API service with the following endpoints to serve the content loaded in the previous step:
-  - **Get Restaurant by ID**: Retrieve details of a specific restaurant by its ID.
-  - **Get List of Restaurants**: Fetch a list of restaurants with pagination support.
- 
-### User Interface
-Develop a web application with the following pages, which must connect to the web API service:
-  - **Restaurant List Page**: Display a list of restaurants. Clicking on a restaurant should navigate the user to the restaurant's detail page.
-  - **Restaurant Detail Page**: Show details of a specific restaurant.
- 
-## Additional Use Cases (Optional)
-If time allows, implement the following additional features, ensuring they are supported in both the API and the UI:
-- **Filtering Options**:
-  - By Country
-  - By Average Spend for Two People
-  - By Cuisines
-- **Search Functionality**: Enable search for restaurants by name and description.
+
+A Restaurant Website, which provides the information about the restaurants like the user rating, number of votes, Menu, photos, locations and many more.
+The information of the restaurants is in json files in folder Flask_server.
+
+Used **React.js** to built the frontend and **Flask** as backend.
+
+# Dine Well
+
+![Screenshot (195)](https://github.com/user-attachments/assets/7088c148-3824-4678-8e89-6e5e21d7ab5d)
+
+This website contains pagination and Search bar to search Restaurants and to navigate next pages.
+
+
+# Restaurant Details Page
+
+![Screenshot (196)](https://github.com/user-attachments/assets/f6c354b0-4dc1-48d8-9450-3637de76d1dd)
+
+
